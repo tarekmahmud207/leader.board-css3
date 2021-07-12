@@ -1,6 +1,8 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 /* common style or utilities */
 body {
     font-family: 'Poppins', sans-serif;
@@ -9,16 +11,16 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     width: 870px;
     background-color: #ffffff;
     padding: 30px;
+    margin-top: 20px;
 }
-
-
 
 
 
@@ -94,5 +96,57 @@ hr {
 }
 
 
+/* latest course  */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course {
+    width: 252.42px;
+    height: 269.79px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+}
+.course .course-thumbnail img {
+    width: 224px;
+    height: 104px;
+}
 
+.course-title {
+    font-size: 21px;
+    color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
 
+.course-author {
+    color: #ED6B4F;
+}
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star {
+    font-size: 12px;
+}
+.fa-star.feuld {
+    color: #FFC014;
+}
+.fa-star.emty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+.course-duration {
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.course-duration p {
+    margin: 0;
+}
+
+.course-duration i {
+    margin-right: 5px;
+}
