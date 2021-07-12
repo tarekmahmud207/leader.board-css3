@@ -55,5 +55,44 @@ main {
 
 hr {
     border: 1px solid #D1D1D1;
-
+    margin-bottom: 30px;
 }
+
+
+/* top blog style */
+
+.blogs {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 70px;
+    grid-row-gap: 26px;
+}
+.blog {
+    display: flex;
+    align-items: center;
+}
+.blog-thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+.blog-infos {
+    margin-left: 16px;
+}
+.blog-title {
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+.blog-author {
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a {
+    color: #562EFF;
+    text-decoration: none;
+}
+
+
+
+
